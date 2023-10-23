@@ -7,6 +7,7 @@ This firmware
 - generates the PWM to boost the power supply voltage up to 170-200 V
 - reads and sets the time from a DS3231 I2C RTC chip
 - handles digit multiplexing
+- does depoisoning every ten minutes at xx:x0:12 
 
 
 **NOTE** There is currently no feedback loop on the HVgenerator (there is the code resulting from copy&paste but it is not used). OTOH there is a calibration feature at bootstrap moment and the pwmTop value is retained in EEPROM (until next firmware flash).
